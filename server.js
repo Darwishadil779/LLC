@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3001;
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
+console.log("Server is running");
 // Contact form route
 app.post('/contact', (req, res) => {
     const { fullName, email, subject, message } = req.body;
