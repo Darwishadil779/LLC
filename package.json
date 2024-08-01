@@ -2,9 +2,9 @@
   "name": "simple-html-css-js-project",
   "version": "1.0.0",
   "description": "A simple HTML, CSS, and JavaScript project",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "Your Name",
   "license": "MIT",
