@@ -667,7 +667,7 @@ Automatic sliding door machines offer smooth, quiet operation, improved accessib
         </div>
         <div class="col-lg-6">
           <div class="contact-us-content">
-            <form id="contact-form" action="http://localhost:3001/contact" method="post">
+            <form id="contact-form" action="" method="post">
               <div class="row">
                 <div class="col-lg-12">
                   <fieldset>
@@ -709,6 +709,20 @@ Automatic sliding door machines offer smooth, quiet operation, improved accessib
       </div>
     </div>
   </footer>
+
+  <script>
+    const isLocalFile = window.location.protocol === 'file:';
+    
+    const protocol = window.location.protocol;
+    const host = window.location.host; 
+
+    const baseUrl = isLocalFile ? 'http://localhost:3001' : `${protocol}//${host}`;
+
+    const contactForm = document.getElementById('contact-form');
+    contactForm.action = `${baseUrl}/contact`;
+
+    console.log(`Form action URL set to: ${contactForm.action}`);
+  </script>
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
